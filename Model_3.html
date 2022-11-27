@@ -118,31 +118,22 @@
     <section class="inner-page pt-4">
       <div class="container">
         <p>
-          Example test 2
+          Example test 3
         </p>
-        <model-viewer src="assets/nucleo.glb" 
+        <model-viewer src="assets/bts_meal_2021.glb" 
         camera-controls="" 
           touch-action="pan-y" 
           data-js-focus-visible="" 
           ar-status="not-presenting"
-        ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="assets/poster.webp" shadow-intensity="1">
-          <button class="Hotspot" slot="hotspot-1" data-position="0.009298894591346047m 0.04946745483951996m -0.01461966942895409m" data-normal="-0.5456931190938151m 0.31151869005318095m 0.777930026108527m" data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Nucleolo</div>
-          </button><button class="Hotspot" slot="hotspot-2" data-position="0.0042785897532049465m 0.06749617774243338m -0.02283141311608609m" data-normal="-0.9684703229807127m -0.2399108339650219m 0.06714182937515066m" data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Poros Nucleares</div>
-          </button><button class="Hotspot" slot="hotspot-3" data-position="0.006875669050281929m 0.04327178648775637m 0.008333968507084264m" data-normal="-0.06312139572082683m -0.08153729985211676m 0.9946694718021063m" data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Membrana nuclear</div>
-          </button><button class="Hotspot" slot="hotspot-4" data-position="-0.0448857237671756m 0.038307960564152324m 0.020228355655799567m" data-normal="0.4974237829555729m -0.0745790978373229m 0.8642959784217086m" data-visibility-attribute="visible">
-              <div class="HotspotAnnotation">Fibrilla citosólica</div>
-          </button>
-          <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-          </div>
-          <button slot="ar-button" id="ar-button">
-              View in your space
-          </button>
-          
-      </model-viewer>
+
+                ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster_2.webp" shadow-intensity="1" autoplay>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+        </model-viewer>
       </div>
     </section>
 
