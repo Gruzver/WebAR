@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Model_3</title>
+  <title>Model_1</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -105,7 +105,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Model_3</h2>
+          <h2>Model_1</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Inner Page</li>
@@ -126,14 +126,18 @@
           data-js-focus-visible="" 
           ar-status="not-presenting"
 
-                ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster_2.webp" shadow-intensity="1" autoplay>
+                ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay>
             <div class="progress-bar hide" slot="progress-bar">
                 <div class="update-bar"></div>
             </div>
             <button slot="ar-button" id="ar-button">
                 View in your space
             </button>
+            <div>
+              <button type="button" onclick="PlayAnimation()">Animation 1</button>
+            </div>
         </model-viewer>
+
       </div>
     </section>
 
@@ -238,6 +242,13 @@
       src="https://unpkg.com/@google/model-viewer@v0.9.0/dist/model-viewer-legacy.js">
   </script>
 
+  <!-- TEST -->
+  <script>
+    function PlayAnimation() {
+      <model-viewer autoplay>
+        </model-viewer>
+    }
+    </script>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
