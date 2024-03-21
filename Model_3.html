@@ -1,119 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Model_1</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- WEB AR -->
-    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
-    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
-
-    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-
-    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
-    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
-
-    <!-- 💁 OPTIONAL: Fullscreen polyfill is needed to fully support AR features -->
-    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
-
-    <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
-    <script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>
-    
-    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
-    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: eStartup - v4.9.1
-  * Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Archivo STL</title>
 </head>
-
 <body>
-
-
-  <main id="main">
-    <section class="inner-page pt-4">
-      <div class="container">
-        <p>
-          Ejemplo de personaje 3D
-        </p>
-        <model-viewer src="assets/character.glb"
-                          camera-controls=""
-                          touch-action="pan-y"
-                          data-js-focus-visible=""
-                          ar-status="not-presenting"
-                          ar ar-modes="webxr scene-viewer quick-look"
-                          camera-controls
-                          poster="poster.webp"
-                          shadow-intensity="1">
-                <div class="progress-bar hide" slot="progress-bar">
-                    <div class="update-bar"></div>
-                </div>
-                <button slot="ar-button" id="ar-button">
-                    View in your space
-                </button>
-                <div>
-                    <button type="button" onclick="PlayAnimation()">Saludar</button>
-                </div>
-            </model-viewer>
-
-      </div>
-    </section>
-
-  </main><!-- End #main -->
-
-  </footer><!-- End  Footer -->
-  <!-- WEB AR-->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script nomodule
-      src="https://unpkg.com/@google/model-viewer@v0.9.0/dist/model-viewer-legacy.js">
-  </script>
-
-  <!-- TEST -->
-  <script>
-    function PlayAnimation() {
-            const modelViewer = document.querySelector('model-viewer');
-            modelViewer.animationName = 'Wave';
-            modelViewer.play();
-        }
-    </script>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <h1>Calculadora de Área de Archivos STL</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".stl">
+        <input type="submit" value="Calcular Área">
+    </form>
 </body>
-
 </html>
